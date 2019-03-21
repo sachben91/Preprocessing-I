@@ -140,9 +140,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .container {
   margin: auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
 }
 nav {
   height: 30px;
@@ -152,6 +158,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 50%;
   justify-content: space-around;
 }
@@ -170,6 +177,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   flex-direction: column;
   background: #E8E9EB;
   background-image: radial-gradient(#d6d7d8 11%, transparent 0);
@@ -187,9 +195,29 @@ header img {
   height: 150px;
   width: 150px;
 }
+@media (max-width: 500px) {
+  header {
+    max-width: 500px;
+    height: 400px;
+  }
+  header h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  header img {
+    height: 100px;
+    width: 100px;
+  }
+}
 .body {
   width: 650px;
   margin: auto;
+}
+@media (max-width: 500px) {
+  .body {
+    max-width: 500px;
+    padding: 1rem;
+  }
 }
 .seccondary-title {
   padding-top: 2rem;
@@ -214,9 +242,19 @@ header img {
 .seccondary-title .list-item-copy {
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  .seccondary-title .list-item-copy {
+    padding-top: 0.5rem;
+  }
+}
 .seccondary-title .list-item {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .seccondary-title .list-item {
+    padding-bottom: 1.5rem;
+  }
 }
 .aboutme {
   padding: 2rem;
@@ -229,11 +267,13 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   font-size: 1rem;
   background-color: #E8E9EB;
   height: 50px;

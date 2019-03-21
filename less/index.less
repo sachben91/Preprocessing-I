@@ -75,11 +75,13 @@ html, body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 
 .container{
 	margin: auto;
+	@media(max-width: 500px){ width: 500px;}
 }
 
 nav{
@@ -98,6 +100,7 @@ nav{
 		width: 20px;
 		border-radius: 100%;
 	}
+
 	}
 	header{
 
@@ -120,11 +123,28 @@ nav{
 			height: 150px;
 			width: 150px;
 		}
+		@media(max-width: 500px){
+			max-width: 500px;
+			height: 400px;
+			h2{
+				text-align: center;
+				font-size: @f3;
+			}
+			img{
+				height: 100px;
+				width: 100px;
+			}
+		}
 	}
 
 .body{
 	width: 650px;
 	margin: auto;
+	@media(max-width: 500px)
+	{
+		max-width: 500px;
+		padding: 1rem;
+	}
 }
 .seccondary-title{
 	padding-top: 2rem;
@@ -148,11 +168,16 @@ nav{
 	}
 	.list-item-copy{
 		font-size:@f4;
+		@media (max-width: 500px){
+			padding-top: 0.5rem;
+		}
 	}
 	.list-item{
 		padding-top: 1rem;
 		padding-bottom: 1rem;
+		@media (max-width: 500px){ padding-bottom: 1.5rem;}
 	}
+
 }
 .aboutme{
 	padding: 2rem;
